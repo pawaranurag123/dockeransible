@@ -1,2 +1,2 @@
-FROM httpd:2.4
-COPY ./website/ /usr/local/apache2/htdocs/
+FROM tomcat:8
+COPY target/*.jar /usr/local/tomcat/webapps/dockeransible.jar
